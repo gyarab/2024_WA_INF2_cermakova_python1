@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %} Všechno o kočkách {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Jaká kočka je pro vás</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#favCats">Nejoblíbenější kočky</a>
+            <div class="collapse" id="favCats">
+              <ul class="list-group">
+                <li class="list-group-item">Mainská mývalí</li>
+                <li class="list-group-item">Britská krátkosrstá</li>
+                <li class="list-group-item">Siamská</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#hypoCats">Hypoalergenní kočky</a>
+            <div class="collapse" id="hypoCats">
+              <ul class="list-group">
+                <li class="list-group-item">Sibiřská</li>
+                <li class="list-group-item">Balijská</li>
+                <li class="list-group-item">Devon Rex</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#shortCats">Krátkosrsté kočky</a>
+            <div class="collapse" id="shortCats">
+              <ul class="list-group">
+                <li class="list-group-item">Americká krátkosrstá</li>
+                <li class="list-group-item">Bengálská</li>
+                <li class="list-group-item">Ruská modrá</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#longCats">Dlouhosrsté kočky</a>
+            <div class="collapse" id="longCats">
+              <ul class="list-group">
+                <li class="list-group-item">Perská</li>
+                <li class="list-group-item">Norská lesní</li>
+                <li class="list-group-item">Ragdoll</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">{% block content %} {% endblock %}</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
